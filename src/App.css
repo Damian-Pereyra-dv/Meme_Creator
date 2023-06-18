@@ -32,7 +32,55 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.meme span {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  text-shadow: 3px 0 #000, -2px 0 #000, 0 3px #000, 0 -2px #000, 2px 2px #000,
+    -2px -2px #000, 2px -2px #000, -2px 2px #000;
+}
+
+.meme img {
+  display: block;
+  margin: 0 auto;
+ 
+  
+}
+
+
+.meme {
+ margin: auto;
+  width: 30%;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  
+
+  
+}
+
+body {
+  background-image: url("https://img.freepik.com/vector-gratis/plantilla-fondo-estampado-amante-gatos_53876-100661.jpg?w=740&t=st=1687056342~exp=1687056942~hmac=86f2fc8ef40f34c78c074fe51fb613050392decae03c0f053f048fae20338b11");
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.linea1 {
+  top: 40px;
+  left: 0;
+  
+ 
+}
+
+.linea2 {
+  bottom: 30px;
+  left: 0;
 }
