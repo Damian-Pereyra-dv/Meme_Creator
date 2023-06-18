@@ -21,7 +21,7 @@ function App() {
   };
 
   const onClickExportar = function (evento) {
-    alert("exportar");
+    alert("El MEME se descargara al aceptar: ");
     html2canvas(document.querySelector("#meme")).then(canvas => {
       var img    = canvas.toDataURL("image/png");
     
@@ -36,14 +36,21 @@ function App() {
 
 
   return (
+
+    
     <div className="App">
+      <br />
+      
+      <h1>MEME CREATOR!</h1>
+      <br />
       <select onChange={onChangeImagen}>
       <option placeholder="Seleccione la foto"> Seleccione la GatiFoto</option>
         <option value="alonzo1">Alonso Pachorrita</option>
         <option value="gordita1">Gorda podrida</option>
         <option value="mimita1">Devil Mimita</option>
         <option value="mimitayalonzo1">wtf cats</option>
-      </select>{" "}
+      </select>
+      <br />
       <br />
       <input
         onChange={onChangeLinea1}
@@ -51,16 +58,24 @@ function App() {
         placeholder=" Linea 1"
       />{" "}
       <br />
+      <br />
       <input
         onChange={onChangeLinea2}
         type="text"
         placeholder=" Linea 2"
       />{" "}
       <br />
-      <button onClick={onClickExportar}> Exportar </button>
+      <br />
+      
+      <button onClick={onClickExportar}> Descargar </button>
+      <br />
+      <br />
+      
       <div className="meme" id="meme">
-        <span className="linea1">{linea1}</span> <br />
+     
+        <span className="linea1">{linea1}</span> 
         <img src= {"/img/" +imagen+ ".jpg"} />
+        
         <span className="linea2">{linea2}</span>
         
       </div>
